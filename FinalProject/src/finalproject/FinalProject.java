@@ -24,6 +24,13 @@ public static String[] adjective = {"Holy","Electric","Eternal"};
         System.out.println(test);
     }
     
+    public static void trackListing()
+    {
+        Random rand = new Random();
+        int n1 = rand.nextInt(9) + 9;
+        
+    }
+
     public static void createTime()
     {
         Random rand = new Random();
@@ -31,7 +38,7 @@ public static String[] adjective = {"Holy","Electric","Eternal"};
         int m2 = rand.nextInt(30) + 30;
         if(m1 < 2)
         {
-            String putout = m1 + ":" + m2 + " (Intro)";
+            String putout = m1 + ":" + m2;
             test.add(putout);
         }
         else
