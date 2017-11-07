@@ -9,7 +9,16 @@ import java.util.Arrays;
 public class FinalProject {
 
 public static ArrayList<String> test = new ArrayList<String>();
-    
+public static String[] noun = {"Blood","War","Sea","Son","Lord","Angels","Rider","Masters","Rage"};
+public static String[] verb = {"Rage"};
+public static String[] adjective = {"Holy","Electric","Eternal"};
+    //dungeons
+    //ride
+    //flight
+    //twilight
+    //destiny
+    //cry
+    //fly
     public static void main(String[] args) {
         createTime();
         System.out.println(test);
