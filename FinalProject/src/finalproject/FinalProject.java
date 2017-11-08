@@ -8,7 +8,9 @@ import java.util.Arrays;
 
 public class FinalProject {
 
+static Random rand = new Random();
 public static ArrayList<String> test = new ArrayList<String>();
+public static int songNum;
 public static String[] noun = {"Blood","War","Sea","Son","Lord","Angels","Rider","Masters","Rage"};
 public static String[] verb = {"Rage"};
 public static String[] adjective = {"Holy","Electric","Eternal"};
@@ -20,20 +22,21 @@ public static String[] adjective = {"Holy","Electric","Eternal"};
     //cry
     //fly
     public static void main(String[] args) {
+        songNum = albumLength();
         createTime();
+        System.out.println(songNum);
         System.out.println(test);
     }
     
-    public static void trackListing()
+    public static int albumLength()
     {
-        Random rand = new Random();
         int n1 = rand.nextInt(9) + 9;
-        
+        return n1;
     }
 
     public static void createTime()
     {
-        Random rand = new Random();
+        //generates the initial potentially intro song length
         int m1 = rand.nextInt(4);
         int m2 = rand.nextInt(30) + 30;
         if(m1 < 2)
@@ -46,9 +49,10 @@ public static String[] adjective = {"Holy","Electric","Eternal"};
             String putout = m1 + ":" + m2;
             test.add(putout);
         }
-        for(int i = 0; i < 7; i++)
+        //generates the rest of the lengths, min of 3 minutes, max of 8
+        for(int i = 1; i < songNum; i++)
         {
-            int n1 = rand.nextInt(7) + 1;
+            int n1 = rand.nextInt(5) + 3;
             int n2 = rand.nextInt(60);
             if(n2 < 10)
             {
