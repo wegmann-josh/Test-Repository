@@ -14,6 +14,7 @@ public static int songNum;
 public static String[] noun = {"Blood","War","Sea","Son","Lord","Angels","Rider","Masters","Rage"};
 public static String[] verb = {"Rage"};
 public static String[] adjective = {"Holy","Electric","Eternal"};
+public static String[] lastNoun = {"Lords","Gods","Kings","Men","Fire","Angels","Thunder","Skies","Wind","Flames","Lightning","Dragons","Wizards","Sorcerers","Rings","Sword","War"};
     //dungeons
     //ride
     //flight
@@ -21,6 +22,7 @@ public static String[] adjective = {"Holy","Electric","Eternal"};
     //destiny
     //cry
     //fly
+    //no dupe songs
     public static void main(String[] args) {
         songNum = albumLength();
         createTime();
