@@ -24,6 +24,9 @@ public static String[] lastNoun = {"Lords","Gods","Kings","Men","Fire","Angels",
     //fly
     //ballad
     //elder
+    //soul
+    //evisceration
+    //doom
     //no dupe songs
     public static void main(String[] args) {
         songNum = albumLength();
